@@ -1,0 +1,35 @@
+body{
+    background-color: #f8f9fa;
+    border: 3px;
+}
+
+#addBtn{
+    border: 1px solid black;
+}
+#multiplyBtn{
+    border: 1px solid black;
+}
+#divideBtn {
+    border: 1px solid black;
+}
+#subtractBtn {
+    border: 1px solid black;
+}
+
+#number1Field {
+    border: 1px solid black;
+}
+#number2Field{
+    border: 1px solid black;
+}
+#answerField{
+    background-color: #fff;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid black;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

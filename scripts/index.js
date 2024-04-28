@@ -12,12 +12,15 @@ window.onload = init;
 function init() {
 
     // event listener
-    addBtn.onclick = add;
-    // addBtn.onmouseenter = add;
-    // addBtn.onmousedown = add;
-    subtractBtn.onclick = subtract;
-    multiplyBtn.onclick = multiplication;
-    divideBtn.onclick = division;
+    // addBtn.onclick = add;
+    // subtractBtn.onclick = subtract;
+    // multiplyBtn.onclick = multiplication;
+    // divideBtn.onclick = division;
+
+    addBtn.addEventListener("click", add);
+    addBtn.addEventListener("click", subtract);
+    addBtn.addEventListener("click", division);
+    addBtn.addEventListener("click", multiplication);
 }
 
 function add() {
@@ -66,41 +69,3 @@ function multiplication() {
 
 }
 
-// addBtn.addEventListener("click", add);
-// addBtn.addEventListener("click", multiplication);
-
-// console.log("working")
-// tryiing with switch statement
-
-
-// function init() {
-//     document.getElementById("add").onclick = operate;
-//     document.getElementById("subtract").onclick = operate;
-//     document.getElementById("multiply").onclick = operate;
-//     document.getElementById("divide").onclick = operate;
-// }
-
-
-// function operate(event) {
-//     const operator = event.target.id;
-
-//     const number1 = parseFloat(document.getElementById("number1").value);
-//     const number2 = parseFloat(document.getElementById("number2").value);
-
-//     let result;
-
-
-//     switch (operator) {
-//         case "add":
-//             result = number1 + number2;
-//             break;
-//         case "subtract":
-//             result = number1 - number2;
-//             break;
-//         case "divide":
-//             result = number1 / number2;
-//         case "multiply":
-//             result = number * number2;
-//     }
-//     document.getElementById("answerField").value = result;
-// }
